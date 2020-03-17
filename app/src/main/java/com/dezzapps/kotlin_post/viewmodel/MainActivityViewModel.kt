@@ -10,8 +10,8 @@ class MainActivityViewModel: ViewModel() {
 
     private val userRepository: UserRepository = UserRepository()
 
-    fun getAllUser(context: Context) {
-        userRepository.getLiveData(context)
+    fun getAllUser(context: Context): LiveData<List<User>> {
+       return userRepository.getLiveData(context)
     }
 
 }
