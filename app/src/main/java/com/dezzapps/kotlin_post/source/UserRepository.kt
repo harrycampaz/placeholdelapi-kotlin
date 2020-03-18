@@ -25,7 +25,7 @@ class UserRepository {
 
         call.enqueue(object : Callback<List<User>>{
             override fun onFailure(call: Call<List<User>>, t: Throwable) {
-                Log.d(TAG, "Fallo al gundato")
+                Log.d(TAG, "Fallo al cargar datos")
             }
 
             override fun onResponse(call: Call<List<User>>, response: Response<List<User>>) {

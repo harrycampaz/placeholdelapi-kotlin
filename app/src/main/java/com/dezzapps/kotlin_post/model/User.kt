@@ -2,6 +2,7 @@ package com.dezzapps.kotlin_post.model
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class User(
     val address: Address,
@@ -12,4 +13,4 @@ data class User(
     val phone: String,
     val username: String,
     val website: String
-)
+): Serializable
