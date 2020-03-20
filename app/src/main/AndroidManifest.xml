@@ -19,7 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.dezzapps.kotlin_post.ui.view.PostActivity"/>
+        <activity android:name="com.dezzapps.kotlin_post.ui.view.PostActivity"
+            android:parentActivityName=".ui.view.MainActivity"
+            />
     </application>
 
 </manifest>

@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.post_list_item.view.*
 
 class PostViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-    fun bind(context: Context, post: Post){
+    fun bind( post: Post, context: Context){
 
         itemView.title.text = post.title
         itemView.body.text = post.body
