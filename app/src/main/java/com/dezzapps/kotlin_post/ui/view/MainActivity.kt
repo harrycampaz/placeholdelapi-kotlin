@@ -51,6 +51,19 @@ class MainActivity : AppCompatActivity() {
 
                 userAdapter.getFilter().filter(p0.toString().trim())
 
+                userAdapter.registerAdapterDataObserver(object : RecyclerView.AdapterDataObserver(){
+
+                    override fun onChanged() {
+                        super.onChanged()
+
+                        if(userAdapter.getItemCount() < 1){
+
+                        }
+
+                    }
+                })
+
+
             }
 
         })
